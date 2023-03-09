@@ -1,0 +1,32 @@
+.root {
+  margin-top: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  :global {
+    .previous {
+      color: rgba(71, 73, 85, 1);
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .next {
+      color: rgba(71, 73, 85, 1);
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+  a {
+    color: rgba(71, 73, 85, 1);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  :global {
+    .selected {
+      a {
+        color: rgba(126, 188, 60, 1);
+      }
+    }
+  }
+}

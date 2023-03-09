@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: #5a5c66;
+  justify-content: space-between;
+  width: 630px;
+  height: 52px;
+  margin-bottom: 15px;
+  margin-left: 77px;
+  .input {
+    border: none;
+    padding-left: 28px;
+    width: 500px;
+    color: #fff;
+    font-size: 14px;
+    background: transparent;
+    &::placeholder {
+      color: #b3b7bf;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  img {
+    width: 23px;
+    height: 23px;
+    padding-right: 20px;
+  }
+}
