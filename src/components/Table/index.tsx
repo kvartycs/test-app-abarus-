@@ -29,16 +29,20 @@ const Table = ({ currentPage, search, setSearch }: any) => {
     <div className={styles.table}>
       <div className={styles.thead}>
         <p className="id">ID</p>
-        <img src="../img/arrow_down.svg" alt="arrow" onClick={changeSort} />
+        <img src="./../img/arrow_down.svg" alt="arrow" onClick={changeSort} />
       </div>
 
       <div className={styles.thead}>
         <p>Заголовок</p>
-        <img src="../img/arrow_down.svg" alt="arrow" onClick={changeSort} />
+        <img src="../../img/arrow_down.svg" alt="arrow" onClick={changeSort} />
       </div>
       <div className={styles.thead}>
         <p>Описание</p>
-        <img src="../img/arrow_down.svg" alt="arrow" onClick={changeSort} />
+        <img
+          src="../../../img/arrow_down.svg"
+          alt="arrow"
+          onClick={changeSort}
+        />
       </div>
       {posts
         .filter((post: any) => {
