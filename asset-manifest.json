@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-app-abarus-/static/css/main.f4cd6a77.css",
-    "main.js": "/test-app-abarus-/static/js/main.124702b6.js",
+    "main.js": "/test-app-abarus-/static/js/main.5452c8c5.js",
     "index.html": "/test-app-abarus-/index.html",
     "main.f4cd6a77.css.map": "/test-app-abarus-/static/css/main.f4cd6a77.css.map",
-    "main.124702b6.js.map": "/test-app-abarus-/static/js/main.124702b6.js.map"
+    "main.5452c8c5.js.map": "/test-app-abarus-/static/js/main.5452c8c5.js.map"
   },
   "entrypoints": [
     "static/css/main.f4cd6a77.css",
-    "static/js/main.124702b6.js"
+    "static/js/main.5452c8c5.js"
   ]
 }
