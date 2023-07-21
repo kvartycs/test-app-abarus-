@@ -15,11 +15,8 @@ const Pagination = ({ setCurrentPage, currentPage }: PaginationProps) => {
   const navigate = useNavigate()
 
   const handleClick = (e: any) => {
-    console.log(e.event.target.innerHTML)
-
     return navigate(`/test-app-abarus-/${e.event.target.innerHTML}`)
   }
-  console.log(currentPage)
 
   return (
     <div>
