@@ -6,16 +6,21 @@ enum Status {
   SUCCESS = 'success',
   ERROR = 'error',
 }
+interface filterProps {
+  currentPage: number
+  sortId: string
+  sortTitle: string
+  sortBody: string
+  search: string
+}
 
 const initialState = { posts: [], status: Status.LOADING }
 
 export const fetchData = createAsyncThunk(
   'fetchData',
-  async ({ currentPage, sort, search }: any) => {
-    console.log(currentPage)
-
+  async ({ currentPage, sortId, sortTitle, sortBody, search }: filterProps) => {
     const { data } = await axios.get(
-      `https://jsonplaceholder.typicode.com/posts?_page=${currentPage}&_limit=10&_sort=id&_order=${sort}`
+      `https://jsonplaceholder.typicode.com/posts?_page=${currentPage}&_limit=10&_sort=id,title,body&_order=${sortId},${sortTitle},${sortBody}&q=${search}`
     )
     return data
   }

@@ -5,6 +5,7 @@
   justify-content: space-between;
   width: 630px;
   height: 52px;
+
   margin-bottom: 15px;
   margin-left: 77px;
   .input {
@@ -25,5 +26,27 @@
     width: 23px;
     height: 23px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 520px;
+  }
+}
+@media (max-width: 950px) {
+  .wrapper {
+    width: 420px;
+  }
+}
+@media (max-width: 743px) {
+  .wrapper {
+    width: 360px;
+  }
+}
+@media (max-width: 540px) {
+  .wrapper {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }

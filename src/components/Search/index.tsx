@@ -1,7 +1,12 @@
 import styles from './Search.module.scss'
 import { useState } from 'react'
 
-const Search = ({ search, setSearch }: any) => {
+interface SearchProps {
+  search: string
+  setSearch: (e: string) => void
+}
+
+const Search = ({ search, setSearch }: SearchProps) => {
   return (
     <div className={styles.wrapper}>
       <input
@@ -11,7 +16,7 @@ const Search = ({ search, setSearch }: any) => {
         placeholder="Поиск"
         onChange={(e) => setSearch(e.target.value)}
       />
-      <img src="../img/search-alt-svgrepo-com (1).svg" alt="search" />
+      <img src="./img/search-alt-svgrepo-com (1).svg" alt="search" />
     </div>
   )
 }

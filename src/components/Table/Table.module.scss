@@ -71,3 +71,27 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .table {
+    width: 900px;
+    grid-template-columns: 95px 394px 411px;
+  }
+}
+@media (max-width: 950px) {
+  .table {
+    width: 750px;
+    grid-template-columns: 80px 319px 351px;
+  }
+}
+@media (max-width: 743px) {
+  .table {
+    width: 550px;
+    grid-template-columns: 60px 229px 261px;
+  }
+}
+@media (max-width: 540px) {
+  .table {
+    width: 350px;
+    grid-template-columns: 40px 149px 161px;
+  }
+}

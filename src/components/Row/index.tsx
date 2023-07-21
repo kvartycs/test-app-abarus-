@@ -1,6 +1,12 @@
 import React from 'react'
 
-const Row = ({ id, title, description }: any) => {
+interface RowProps {
+  id: number
+  title: string
+  description: string
+}
+
+const Row = ({ id, title, description }: RowProps) => {
   return (
     <>
       <div className="">{id}</div>
