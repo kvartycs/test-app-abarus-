@@ -13,7 +13,21 @@ function App() {
     <>
       <Routes>
         <Route
-          path={`/test-app-abarus-/:${currentPage}`}
+          path="/"
+          element={
+            <div className="App">
+              <Search search={search} setSearch={setSearch}></Search>
+
+              <Table search={search} currentPage={currentPage}></Table>
+              <Pagination
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+              ></Pagination>
+            </div>
+          }
+        ></Route>
+        <Route
+          path={`/:${currentPage}`}
           element={
             <div className="App">
               <Search search={search} setSearch={setSearch}></Search>
